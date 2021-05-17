@@ -73,7 +73,7 @@ class UploadController extends Controller
 
                     //sent maill
 
-                    $user['email'] = 'sreejithgirieeshnair@gmail.com';
+                    $user['email'] = 'charush@accubits.com;
                     $maildata = [
                         'title' => 'csv import',
                         'maildata' => 'File has uploaded to the database.'
@@ -90,7 +90,7 @@ class UploadController extends Controller
                      ->with('file', $name);
                 
             }else{
-                $user['email'] = 'sreejithgirieeshnair@gmail.com';
+                $user['email'] = 'charush@accubits.com';
                 $maildata = [
                     'title' => 'csv import',
                     'maildata' => 'Only 3 columns allowed.'
@@ -103,7 +103,7 @@ class UploadController extends Controller
             }
            
         }else{
-            $user['email'] = 'sreejithgirieeshnair@gmail.com';
+            $user['email'] = 'charush@accubits.com';
             $maildata = [
                 'title' => 'csv import',
                 'maildata' => 'Only 1000 rows allowed.'
